@@ -60,6 +60,7 @@ if ( ! function_exists( 'aa_add_ggl_analytics' ) ) {
 
 			  ga('create', 'UA-99602061-1', 'auto');
 			  ga('send', 'pageview');
+			  ga('set', 'appName', 'WPRAB Learn');
 
 			</script>
 		<?php
