@@ -17,29 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-
-/**
- * Define global constants.
- *
- * @since 1.0.0
- */
-// Plugin version.
-if ( ! defined( 'AGA_VERSION' ) ) {
-    define( 'AGA_VERSION', '1.0.0' );
-}
-
-if ( ! defined( 'AGA_NAME' ) ) {
-    define( 'AGA_NAME', trim( dirname( plugin_basename( __FILE__ ) ), '/' ) );
-}
-
-if ( ! defined('AGA_DIR' ) ) {
-    define( 'AGA_DIR', WP_PLUGIN_DIR . '/' . AGA_NAME );
-}
-
-if ( ! defined('AGA_URL' ) ) {
-    define( 'AGA_URL', WP_PLUGIN_URL . '/' . AGA_NAME );
-}
-
 // Make sure the function is unique.
 if ( ! function_exists( 'aa_add_ggl_analytics' ) ) {
 	// Hook.
@@ -58,7 +35,7 @@ if ( ! function_exists( 'aa_add_ggl_analytics' ) ) {
 			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			  ga('create', 'UA-99602061-1', 'auto');
+			  ga('create', 'XXXXXXXXX', 'auto'); // @TODO: Change the code here.
 			  ga('send', 'pageview');
 			  ga('set', 'appName', 'WPRAB Learn');
 
